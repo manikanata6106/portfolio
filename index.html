@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manikanta- Portfolio</title>
+    <meta name="description" content="Full Stack Developer & AI Enthusiast - Professional Portfolio">
+    <link rel="stylesheet" href="portfolio.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add this inside the <head> of your HTML -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <img src="./images/2.png" alt="Logo" class="logo-img">
+                        Manikanta Boyina
+                    </div>
+                <nav class="nav">
+                    <a href="#home" class="nav-link active" data-section="home">Home</a>
+                    <a href="#about" class="nav-link" data-section="about">About</a>
+                    <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                    <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Manikanta <span class="gradient-text">Boyina</span>
+                        </h1>
+                        <p class="hero-subtitle">Full Stack Developer & AI Enthusiast</p>
+                        <div class="education">
+                            <div class="education-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>B.Tech in Artificial Intelligence And Machine Learning</span>
+                            </div>
+                            <div class="education-item">
+                                <i class="fas fa-code"></i>
+                                <span>Specialization in AI/ML</span>
+                            </div>
+                        </div>
+                        <div class="hero-buttons">
+                            <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                                <i class="fas fa-envelope"></i>
+                                Get In Touch
+                            </button>
+                            <button class="btn btn-secondary" onclick="scrollToSection('projects')">
+                                <i class="fas fa-folder"></i>
+                                View Projects
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="./images/mani.jpeg" alt="Alex Johnson" class="profile-img">
+                            <div class="image-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        About <span class="gradient-text">Me</span>
+                    </h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-content">
+                    <div class="about-image">
+                        <div class="card">
+                            <img src="./images/mani kanta.png" alt="Creative workspace">
+                        </div>
+                    </div>
+                    <div class="about-text">
+                        <p>I am a recent B.Tech graduate from Swarnandhra College of Engineering and Technology, 
+                            specializing in Artificial Intelligence and Machine Learning. 
+                            I am passionate about both Artificial Intelligence and Web Development, 
+                            and I love applying my knowledge to solve real-world problems. 
+                            Whether it's designing responsive websites or developing intelligent systems, 
+                            I enjoy creating practical and impactful digital solutions.
+                        </p>
+                        <p>
+                            I strongly believe in continuous learning and am always exploring new technologies and tools to expand my skillset. 
+                            My academic journey has been shaped by hands-on projects, hackathons, and a curiosity-driven approach to development. 
+                            My goal is to grow as a full-stack developer with a solid foundation in AI, contribute to open-source projects, 
+                            and build applications that truly make a difference in everyday life.
+                        </p>
+                        <div class="stats">
+                            <div class="stat">
+                                <div class="stat-number">0</div>
+                                <div class="stat-label">Fresher</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">4+</div>
+                                <div class="stat-label">Projects Completed</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <h3>Python</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                        <span class="skill-percent">60%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3>HTML</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                        <span class="skill-percent">50%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3>CSS</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                        <span class="skill-percent">45%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-js-square"></i>
+                        </div>
+                        <h3>JavaScript</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 88%"></div>
+                        </div>
+                        <span class="skill-percent">35%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>SQL</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%"></div>
+                        </div>
+                        <span class="skill-percent">45%</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <h3>Java</h3>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                        <span class="skill-percent">40%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400" alt="E-Commerce Platform">
+                        </div>
+                        <div class="project-content">
+                            <h3>Password Strength Analysis And Recommendation System Using Django</h3>
+                            <p>Developed a full-stack web application to analyze password strength in real time using the zxcvbn library.
+                               Integrated personalized recommendations to guide users in creating stronger, more secure passwords.
+                               Visualized password strength data with Matplotlib through intuitive bar and pie charts to enhance user understanding.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Python Django</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400" alt="AI Chat Bot">
+                        </div>
+                        <div class="project-content">
+                            <h3>AI Chat Bot</h3>
+                            <p>An intelligent chatbot powered by machine learning algorithms, capable of natural language processing and contextual conversations.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">TensorFlow</span>
+                                <span class="tech-tag">Flask</span>
+                                <span class="tech-tag">NLP</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400" alt="Task Management App">
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>A collaborative task management application with real-time updates, team collaboration features, and intuitive drag-and-drop interface.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Socket.io</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Add more rows like this if needed -->
+    </section>
+
+
+
+    <section id="resume" class="section">
+    <h2 id="resume1">Resume</h2>
+    <div class="section-line"></div><br>
+    <p>Download my resume:</p>
+    <a href="./images/Manikanta_Resume_py1.pdf" target="_blank" class="resume-button">
+  Download Resume
+    </a>
+
+
+
+    </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+91 9533933288</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>boinamanikanta01@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Krishna dst, Andhra Pradesh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h3>Connect With Me</h3>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/manikantaboina" target="_blank" class="social-link linkedin">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com/manikanata6106" target="_blank" class="social-link github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        
+                            <a href="https://www.instagram.com/manikanta.boina?igsh=MXc2ZnFwbTdxbzdzeg==" target="_blank" class="social-link instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Boyina Manikanta. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation
+        function scrollToSection(sectionId) {
+            const element = document.getElementById(sectionId);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Navigation active state
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section');
+
+            // Add click event to nav links
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    scrollToSection(targetId);
+                    
+                    // Update active state
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+
+            // Update active nav on scroll
+            window.addEventListener('scroll', function() {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === '#' + current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            // Animate skill bars on scroll
+            const skillBars = document.querySelectorAll('.skill-progress');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animation = 'fillBar 2s ease-in-out forwards';
+                    }
+                });
+            });
+
+            skillBars.forEach(bar => {
+                observer.observe(bar);
+            });
+        });
+    </script>
+</body>
+</html>
